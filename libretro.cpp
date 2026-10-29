@@ -691,7 +691,6 @@ MDFN_COLD RETRO_API bool retro_load_game(const retro_game_info* game)
   pipe_option("supafaust_superfx_clock_rate", "snes_faust.superfx.clock_rate");
   pipe_option_bool("supafaust_superfx_icache", "snes_faust.superfx.icache");
 
-  MDFNI_SetSetting("snes_faust.renderer", "mt");
   //
   //
   //
