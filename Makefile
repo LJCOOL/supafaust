@@ -49,7 +49,7 @@ else ifeq ($(platform), classic_armv7_a7)
 	fpic := -fPIC
 	SHARED := -shared -Wl,--no-undefined -Wl,--version-script=link.T
 	CFLAGS += -Ofast \
-	-flto=4 -fwhole-program -fuse-linker-plugin \
+	\
 	-fdata-sections -ffunction-sections -Wl,--gc-sections \
 	-fno-stack-protector -fno-ident -fomit-frame-pointer \
 	-falign-functions=1 -falign-jumps=1 -falign-loops=1 \
@@ -76,7 +76,7 @@ else ifeq ($(platform), classic_armv8_a35)
 	fpic := -fPIC
 	SHARED := -shared -Wl,--no-undefined -Wl,--version-script=link.T
 	CFLAGS += -Ofast \
-	-flto=4 -fwhole-program -fuse-linker-plugin \
+	\
 	-fdata-sections -ffunction-sections -Wl,--gc-sections \
 	-fno-stack-protector -fno-ident -fomit-frame-pointer \
 	-falign-functions=1 -falign-jumps=1 -falign-loops=1 \
